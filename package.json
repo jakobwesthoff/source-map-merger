@@ -1,0 +1,19 @@
+{
+  "name": "mapmerger",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Merge generated Source Maps to create a map between the initial source and the final result through multiple transformation and processing steps.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "source-map",
+    "merge",
+    "combine",
+    "process",
+    "build"
+  ],
+  "author": "Jakob Westhoff <jakob@westhoffswelt.de>",
+  "license": "MIT"
+}
