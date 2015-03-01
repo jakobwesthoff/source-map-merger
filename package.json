@@ -1,5 +1,5 @@
 {
-  "name": "mapmerger",
+  "name": "source-map-merger",
   "private": true,
   "version": "1.0.0",
   "description": "Merge generated Source Maps to create a map between the initial source and the final result through multiple transformation and processing steps.",
@@ -15,5 +15,8 @@
     "build"
   ],
   "author": "Jakob Westhoff <jakob@westhoffswelt.de>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "source-map": "^0.4.0"
+  }
 }
