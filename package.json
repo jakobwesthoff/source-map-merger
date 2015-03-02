@@ -10,10 +10,20 @@
     "source-map",
     "merge",
     "combine",
-    "process",
     "build"
   ],
-  "author": "Jakob Westhoff <jakob@westhoffswelt.de>",
+  "author": {
+    "name" : "Jakob Westhoff",
+    "email" : "jakob@westhoffswelt.de",
+    "url" : "http://westhoffswelt.de/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/jakobwesthoff/source-map-merger.git"
+  },
+  "directories": {
+    "lib": "./Library"
+  },
   "license": "MIT",
   "dependencies": {
     "source-map": "^0.4.0"
