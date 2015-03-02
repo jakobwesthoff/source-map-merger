@@ -1,7 +1,6 @@
 {
   "name": "source-map-merger",
-  "private": true,
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "Merge generated Source Maps to create a map between the initial source and the final result through multiple transformation and processing steps.",
   "main": "index.js",
   "scripts": {
