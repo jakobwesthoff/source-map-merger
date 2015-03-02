@@ -5,7 +5,7 @@
   "description": "Merge generated Source Maps to create a map between the initial source and the final result through multiple transformation and processing steps.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "node_modules/.bin/jasmine"
   },
   "keywords": [
     "source-map",
@@ -18,5 +18,8 @@
   "license": "MIT",
   "dependencies": {
     "source-map": "^0.4.0"
+  },
+  "devDependencies": {
+    "jasmine": "^2.2.1"
   }
 }
