@@ -26,7 +26,7 @@ target.
 `source-map-merger` exports two functions called `createMergedSourceMap` and
 `createMergedSourceMapFromFiles` This functions take an array of Source Map
 objects or filepaths respectively. The order in which the maps need to be
-specified is from the start of the transformation process to the end Imagine
+specified is from the start of the transformation process to the end. Imagine
 the above example created the SourceMap files `transpile.map`, `dependency.map`
 and `minification.map`. In this case you simply execute the following code to
 merge all of them:
@@ -42,3 +42,17 @@ merge all of them:
 The return value of both functions is a string containing the newly generated
 map. If you use this Source Map in conjunction with your final build target it
 will automatically map back to your original target sources.
+
+### Ignoring Missing Statements
+
+Occasionally, tools can produce incomplete, non-overlapping source maps, causing
+a token in the *generated* file to map to nothing in the source file. When this
+occurs, `source-map-merger` will throw an exception.
+
+To ignore these missing source maps, simply specify an additional boolean:
+
+    var mergedMap = SourceMapMerger.createMergedSourceMapFromFiles([
+        "transpile.map",
+        "dependency.map",
+        "minification.map"
+    ], true /* Ignore missing statements */);
