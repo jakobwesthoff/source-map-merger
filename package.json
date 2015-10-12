@@ -1,10 +1,11 @@
 {
   "name": "source-map-merger",
-  "version": "0.2.0",
   "description": "Merge generated Source Maps to create a map between the initial source and the final result through multiple transformation and processing steps.",
+  "version": "0.0.0-semantically-released",
   "main": "index.js",
   "scripts": {
-    "test": "node_modules/.bin/jasmine"
+    "test": "node_modules/.bin/jasmine",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "keywords": [
     "source-map",
@@ -13,9 +14,9 @@
     "build"
   ],
   "author": {
-    "name" : "Jakob Westhoff",
-    "email" : "jakob@westhoffswelt.de",
-    "url" : "http://westhoffswelt.de/"
+    "name": "Jakob Westhoff",
+    "email": "jakob@westhoffswelt.de",
+    "url": "http://westhoffswelt.de/"
   },
   "repository": {
     "type": "git",
@@ -29,6 +30,7 @@
     "source-map": "^0.4.0"
   },
   "devDependencies": {
-    "jasmine": "^2.2.1"
+    "jasmine": "^2.2.1",
+    "semantic-release": "^4.3.5"
   }
 }
